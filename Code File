@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <cs50.h>
+#include <math.h>
+
+int main(void)
+{
+        printf("\nThis is made by hman-08 on \nGithub:https://github.com/hman-08\n\n---HST CALCULATOR---\n\n");
+        
+        //Gets the Users subtotal without Tax
+        double s = get_int("Subtotal(Before Taxes):");
+
+        //Calculate and print HST
+        s = s * 13 / 100.0;
+        printf("Your HST is: $%f\n", s);
+
+}
